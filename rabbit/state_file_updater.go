@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/pivotal-cf/cf-rabbitmq-release/src/rabbitmq-cluster-migration-tool/mapping"
+	"github.com/pivotal-cf/rabbitmq-cluster-migration-tool/mapping"
 )
 
 func UpdateStateFile(nodeMappings mapping.NodeMapping, stateFilePath string) error {

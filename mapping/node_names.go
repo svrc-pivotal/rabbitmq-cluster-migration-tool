@@ -1,7 +1,7 @@
 package mapping
 
 import (
-	"github.com/pivotal-cf/cf-rabbitmq-release/src/rabbitmq-cluster-migration-tool/parsers"
+	"github.com/pivotal-cf/rabbitmq-cluster-migration-tool/parsers"
 )
 
 type NodeMapping map[string]string

@@ -8,8 +8,8 @@ import (
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/cf-rabbitmq-release/src/rabbitmq-cluster-migration-tool/mapping"
-	"github.com/pivotal-cf/cf-rabbitmq-release/src/rabbitmq-cluster-migration-tool/rabbit"
+	"github.com/pivotal-cf/rabbitmq-cluster-migration-tool/mapping"
+	"github.com/pivotal-cf/rabbitmq-cluster-migration-tool/rabbit"
 )
 
 var _ = Describe("State File Updater", func() {

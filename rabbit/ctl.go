@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pivotal-cf/cf-rabbitmq-release/src/rabbitmq-cluster-migration-tool/mapping"
+	"github.com/pivotal-cf/rabbitmq-cluster-migration-tool/mapping"
 )
 
 type AShellRunner interface {
