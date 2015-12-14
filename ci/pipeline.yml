@@ -1,0 +1,23 @@
+--- 
+resources:
+- name: rabbitmq-cluster-migration-tool 
+  type: git
+  source:
+    uri: git@github.com:pivotal-cf/rabbitmq-cluster-migration-tool.git 
+    branch: master
+    private_key: {{git-ssh-key}}
+
+jobs:
+- name: test
+  plan:
+  - get: rabbitmq-cluster-migration-tool 
+    trigger: true
+  - task: test
+    config:
+      inputs:
+      - name: rabbitmq-cluster-migration-tool 
+      platform: linux
+      image: docker:///cflondonservices/london-services-ci-rabbitmq#stable
+      run:
+        path: rabbitmq-cluster-migration-tool/scripts/test.sh 
+

@@ -3,6 +3,8 @@
 set -e
 set -o pipefail
 
+cd $(dirname $0)/..
+
 main() {
   run_go_vet
   run_golint
