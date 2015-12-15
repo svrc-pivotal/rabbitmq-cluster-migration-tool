@@ -4,6 +4,9 @@ set -e
 set -o pipefail
 
 cd $(dirname $0)/..
+export GOPATH=$GOPATH:$PWD/../../../../
+
+echo $GOPATH
 
 main() {
   run_go_vet
