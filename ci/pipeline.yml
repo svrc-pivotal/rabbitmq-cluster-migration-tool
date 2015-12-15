@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     uri: git@github.com:pivotal-cf/rabbitmq-cluster-migration-tool.git 
-    branch: develop
+    branch: master
     private_key: {{git-ssh-key}}
 
 jobs:
