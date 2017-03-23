@@ -8,7 +8,7 @@ fi
 
 ssh_key=$(lpass show "Shared-London Services"/london-ci/git-ssh-key --notes)
 
-fly -t london set-pipeline \
-    --pipeline rabbitmq-migration-tool \
+fly -t zumba set-pipeline \
+    --pipeline rabbitmq-cluster-migration-tool \
     --config pipeline.yml \
     --var git-ssh-key="${ssh_key}"
