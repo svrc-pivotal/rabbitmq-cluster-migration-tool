@@ -20,5 +20,5 @@ jobs:
       platform: linux
       image: docker:///cflondonservices/london-services-ci-rabbitmq#stable
       run:
-        path: src/github.com/pivotal-cf/rabbitmq-cluster-migration-tool/scripts/test.sh
+        path: src/github.com/pivotal-cf/rabbitmq-cluster-migration-tool/scripts/run_tests
 
